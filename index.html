@@ -225,6 +225,11 @@
   .tdesc b{color:var(--ink);font-weight:600;}
   .fineprint{margin-top:34px;font-family:var(--mono);font-size:12px;color:var(--muted);line-height:1.6;max-width:720px;}
   @media(max-width:820px){.grid{grid-template-columns:1fr;}}
+  /* Telefon: numret ovanför rubriken så att text och bilder får hela bredden (Judes besked 2026-10-13) */
+  @media(max-width:640px){
+    .step{grid-template-columns:minmax(0,1fr);gap:12px;padding:26px 0;}
+    .step-n{width:30px;height:30px;font-size:13px;}
+  }
 </style>
 </head>
 <body>
